@@ -7,7 +7,7 @@ services:
     - "traefik.enable=true"
     - "traefik.backend=microbot"
     - "traefik.frontend.rule=Host:microbot.softwarity.io"
-    - "traefik.docker.network=reverseproxy_default"
+    - "traefik.docker.network=reverseproxy2_default"
     networks:
     - "reverseproxy2_default"
     restart: always
