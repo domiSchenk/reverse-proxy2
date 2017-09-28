@@ -7,9 +7,9 @@ services:
     - "traefik.enable=true"
     - "traefik.backend=whoami"
     - "traefik.frontend.rule=Host:whoami.softwarity.io"
-    - "traefik.docker.network=reverseproxy_default"
+    - "traefik.docker.network=reverseproxy2_default"
     networks:
-    - "reverseproxy_default"
+    - "reverseproxy2_default"
     restart: always
 networks:
   reverseproxy2_default:
