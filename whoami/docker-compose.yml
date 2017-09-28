@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  whoami:
+    image: emilevauge/whoami
+    labels:
+    - "traefik.enable=true"
+    - "traefik.backend=whoami"
+    - "traefik.frontend.rule=Host:whoami.softwarity.io"
+    - "traefik.docker.network=reverseproxy_default"
+    networks:
+    - "reverseproxy_default"
+    restart: always
+networks:
+  reverseproxy_default:
+    external:
+      name: reverseproxy_default
