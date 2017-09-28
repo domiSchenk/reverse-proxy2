@@ -9,7 +9,7 @@ services:
     - "traefik.frontend.rule=Host:microbot.softwarity.io"
     - "traefik.docker.network=reverseproxy_default"
     networks:
-    - "reverseproxy_default"
+    - "reverseproxy2_default"
     restart: always
 networks:
   reverseproxy2_default:
