@@ -12,6 +12,6 @@ services:
     - "reverseproxy_default"
     restart: always
 networks:
-  reverseproxy_default:
+  reverseproxy2_default:
     external:
-      name: reverseproxy_default
+      name: reverseproxy2_default
