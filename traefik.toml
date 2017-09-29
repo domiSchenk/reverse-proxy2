@@ -23,7 +23,7 @@ address = ":443"
 # Enable ACME (Let's Encrypt): automatic SSL
 [acme]
 # caServer = "https://acme-staging.api.letsencrypt.org/directory"
-email = "ssltest@softwarity.io"
+email = "ssl@softwarity.io"
 storage = "acme.json" # or "traefik/acme/account" if using KV store
 entryPoint = "https"
 onDemand = false
